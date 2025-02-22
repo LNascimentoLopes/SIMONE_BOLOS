@@ -46,3 +46,19 @@ nav li {
     background-size: cover;
     background-position: bottom;
 }
+/*estilização do SOBRE NÓS */
+.Sobre_nos {
+    margin: 0;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+}
+.img_sobrenos {
+    width: 10%;
+    float: left;
+    margin-right: 20px;
+}
+.titulo_sobrenos {
+    text-align: center;
+    clear: left;
+}
