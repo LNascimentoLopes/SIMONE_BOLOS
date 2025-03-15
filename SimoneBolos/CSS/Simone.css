@@ -102,3 +102,71 @@ nav li {
     text-align: center;
     color: antiquewhite;
 }
+.Sobre_nos {
+    background-color: #ffd1d7;
+}
+.Titulo_SB {
+    display: flex;
+    justify-content: center;
+    font-size: 40;
+    padding-top: 15px;
+    margin: 0;
+    color: #2e0006;
+}
+.SB_lista{
+    display:flex;
+    justify-content: center;
+}
+.SBT{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.img_sobrenos {
+    width: 100px;
+    height: 100px;
+}
+.SB_subtitulos {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35;
+    color: #ff6b7f;
+    margin-top: -15px;
+}
+.SB_text {
+    text-align: center;
+    width: 25%;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.rodape {
+    background-color: #ffb7c1;
+    height: 40px;
+    margin: 0;
+}
+footer{
+    background-color: #db5275;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.pes {
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    color: #faefd6;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    background-image: url(../IMG/SIMONE_BOLOS.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bolin {
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
