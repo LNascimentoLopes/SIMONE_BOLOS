@@ -30,7 +30,11 @@ nav li {
     margin-right: 20px;
     transition: all .3s ease;
 }
-.link:hover{
+a{
+    text-decoration: none;
+    color: #faefd6;
+}
+a:hover{
     color: #db5275;
 }
 
@@ -65,10 +69,16 @@ nav li {
     text-align: center;
     padding-bottom: 20px;
     color: #faefd6;
+    
 }
 
 .IMG_mapa {
     border-radius: 30px;
+    transition: all 0.6s ease;
+}
+.IMG_mapa:hover{
+    height:390px ;
+    width: 890px;
 }
 
 .fundinho {
@@ -165,8 +175,13 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.bolin:hover{
+    width:550px;
+    height:305px;
+}
 .bolin {
     border-radius: 30px;
     margin-top: 40px;
     margin-bottom: 30px;
+    transition: all 0.6s ease;
 }

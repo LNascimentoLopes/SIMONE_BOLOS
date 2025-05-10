@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Bolos da Simone</title>
+        <link rel="stylesheet" href="CSS/Bolos.css">
+        <link rel="shortcut icon" href="IMG/Bolos_icone_SF2.ico">
+        <link rel="stylesheet" href="CSS/Simone.css">
+    </head>
+    <body>
+        <header>
+            <div class="divHeader"> 
+                <img src="IMG/SIMONE BOLOS.png" class="SimoneLogo">
+                <nav>
+                    <ul>
+                        <li class = "link"><a href="index.html">A Simone</a></li>
+                        <li>|</li>
+                        <li class = "link">
+                            <a href="Bolos.html">Bolos</a>
+                        </li>
+                        <li>|</li>
+                        <li class = "link">
+                            <a href="Contato.html">Contato</a>
+                        </li>
+                        <li>|</li>
+                        <li class = "link"><a href="Lojas.Html">Lojas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="divBanner2">
+            <h1 class="BOLOS_title">BOLOS</h1>
+            <h4 class="BOLOS_text">Deliciosamente recheados e com muito sabor, cada um de nossos bolos é criado
+                para proporcionar mais amor e carinho para todas as ocasiões.</h4>
+        </div>
+        <div class="Categorias">
+            <h3 class="Titulo_cat">Selecione a categoria</h3>
+            <nav class="cat_boloUL">
+                <ul class="cat_bolo">
+                    <li class="cat_li border-left">Bolos de Chocolate</li>
+                    <li class="cat_li">Bolos de Morango</li>
+                    <li class="cat_li">Bolos de Maracuja</li>
+                    <li class="cat_li border-right">Bolos de Abacaxi</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="produtos">
+            <div class="conteudo">
+                <div class="bolos"><img src="IMG/bolo_1-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango com Chocolate</h2>
+                <button onclick="abrirPopup('Bolo de Morango com Chocolate')">Eu quero</button>
+        </div>
+                <div class="bolos"><img src="IMG/Bolo_2-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 2</h2></div>
+                <div class="bolos"><img src="IMG/bolo_1-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 3</h2></div>
+                <div class="bolos"><img src="IMG/Bolo_2-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 4</h2></div>
+            </div>
+        </div>
+        <div class="produtos">
+            <div class="conteudo">
+                <div class="bolos"><img src="IMG/bolo_1-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 1</h2></div>
+                <div class="bolos"><img src="IMG/Bolo_2-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 2</h2></div>
+                <div class="bolos"><img src="IMG/bolo_1-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 3</h2></div>
+                <div class="bolos"><img src="IMG/Bolo_2-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 4</h2></div>
+            </div>
+        </div>
+        <div class="produtos">
+            <div class="conteudo">
+                <div class="bolos"><img src="IMG/bolo_1-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 1</h2></div>
+                <div class="bolos"><img src="IMG/Bolo_2-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 2</h2></div>
+                <div class="bolos"><img src="IMG/bolo_1-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 3</h2></div>
+                <div class="bolos"><img src="IMG/Bolo_2-removebg-preview.png" class="img_bolos">
+                <h2 class="nome_bolo"> Bolo de Morango 4</h2></div>
+            </div>
+        </div>
+        <div class="sla">
+            
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="fechar" onclick="fecharPopup()">&times;</span>
+              <h2 id="tituloPopup"></h2>
+              <p>Informações detalhadas sobre o bolo aparecerão aqui.</p>
+            </div>
+          </div>
+    </body>
+    <script>
+        function abrirPopup(nome) {
+          document.getElementById("tituloPopup").textContent = nome;
+          document.getElementById("popup").style.display = "block";
+        }
+      
+        function fecharPopup() {
+          document.getElementById("popup").style.display = "none";
+        }
+      
+        // Fechar ao clicar fora
+        window.onclick = function(event) {
+          const popup = document.getElementById("popup");
+          if (event.target === popup) {
+            fecharPopup();
+          }
+        }
+      </script>
+</html>
+
