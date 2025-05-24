@@ -1,0 +1,25 @@
+.divBanner3{
+    background-image: url("../IMG/bc_contato.png");
+    height: 600px;
+    background-position: center;
+}
+.divBanner3::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.459);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 63%;
+}
+main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ;
+}
+.titulo_contatos{
+    text-align: center;
+    color: #56091f;
+}
+.contato1{
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+}

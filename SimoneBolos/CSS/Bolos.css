@@ -181,7 +181,7 @@
     padding: 20px;
     border-radius: 8px;
     width: 80%;
-    height: 120%;
+    height: 100%;
     text-align: center;
     align-items: center;
   }
@@ -262,4 +262,7 @@
     background-color:antiquewhite;
     padding:10px 10px 10px 10px;
     border-radius: 35px;
+  }
+  footer{
+  background-color: #daa990;
   }

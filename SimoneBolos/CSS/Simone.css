@@ -36,6 +36,8 @@ a{
 }
 a:hover{
     color: #db5275;
+    transition: all .3s ease;
+    
 }
 
 /*Estilização da DIV do header*/
@@ -159,6 +161,7 @@ footer{
     background-color: #db5275;
     padding-top: 10px;
     padding-bottom: 50px;
+    width: 100%;
 }
 .pes {
     display: flex;
