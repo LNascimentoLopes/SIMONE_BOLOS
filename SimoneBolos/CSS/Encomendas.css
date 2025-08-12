@@ -1,0 +1,23 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e0006;
+    flex-direction: column;
+    color: #faefd6;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+table{
+    width: 80%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+}
+td, th{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid#faefd6 ;
+    text-align: center;
+    color: #faefd6;
+}
