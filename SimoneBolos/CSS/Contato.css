@@ -1,19 +1,15 @@
 .divBanner3{
-    display: flex;
     background-image: url("../IMG/bc_contato.png");
     height: 600px;
     background-position: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 .divBanner3::after{
     content: '';
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.459);
     position: absolute;
     left: 0;
     width: 100%;
-    height: 63%;
+    height: 600px;
 }
 main{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ;
@@ -23,17 +19,156 @@ main{
     color: #56091f;
 }
 .contato1{
+    color: antiquewhite;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #dd7b4a;
 }
-.fund_text{
-    font-size: 60px;
-    margin: 0;
-    margin-bottom: 0px;
+.sl_motivo{
+    width: 510px;
+    height: 30px;
+    border-radius: 10px;
 }
-.fund_text::after{
+.area{
+    border-radius: 10px;
+}
+label{
+    font-weight: bold;
+    color: antiquewhite;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.politica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* espaço entre o checkbox e o texto */
+  margin-top: 20px;
+  text-align: center;
+}
+.politica input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.politica label {
+  cursor: pointer;
+  font-size: 14px;
+}
+.formulario {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.dados, .motivo {
+    width: 90%;
+    max-width: 500px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+}
+body {
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  background-color: #dd7b4a;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo_contatos {
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 40px;
+  font-size:40px;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.lado-esquerdo,
+.lado-direito {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.lado-direito{
+    padding-top: 30px;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+select {
+  height: 40px;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: antiquewhite;
+  color: #56091f;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #7b2d3a;
+}
+
+.politica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.politica input {
+  width: 18px;
+  height: 18px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none; /* Você pode usar JS para exibir */
+}
+footer{
+    background-color: #db5275;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.pes {
+    display: flex;
+    justify-content:center;
     margin: 0;
-    text-align: center;
+    color: #faefd6;
 }
