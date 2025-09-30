@@ -1,78 +1,80 @@
 <html>
-
-<head>
-  <title>Bolos da Simone</title>
-  <link rel="stylesheet" href="CSS/Contato.css" />
-  <link rel="shortcut icon" href="IMG/Bolos_icone_SF2.ico" />
-  <link rel="stylesheet" href="CSS/Simone.css" />
-</head>
-
-<body>
-  <header>
-    <div class="divHeader">
-      <img src="IMG/SIMONE BOLOS.png" class="SimoneLogo" />
-      <nav>
-        <ul>
-          <li class="link"><a href="index.html">A Simone</a></li>
-          <li>|</li>
-          <li class="link">
-            <a href="Bolos.html">Bolos</a>
-          </li>
-          <li>|</li>
-          <li class="link">
-            <a href="Contato.html">Contato</a>
-          </li>
-          <li>|</li>
-          <li class="link"><a href="Lojas.Html">Lojas</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="divBanner3"></div>
-    <h2 class="titulo_contatos">Deixe sua mensagem</h2>
-
-      <form class="formulario" action="#" method="post">
-        <div class="lado-esquerdo">
-          <label>SAC - Serviço de Atendimento ao Consumidor</label>
-
-          <input type="text" name="nome" placeholder="Nome" required />
-          <span class="error">O campo é obrigatório.</span>
-
-          <input type="email" name="email" placeholder="E-mail" required />
-          <span class="error">O campo é obrigatório.</span>
-
-          <input type="tel" name="telefone" placeholder="Telefone" required />
-          <span class="error">O campo é obrigatório.</span>
-
-          <input type="text" name="cidade" placeholder="Cidade" required />
-          <span class="error">O campo é obrigatório.</span>
-        </div>
-
-        <div class="lado-direito">
-          <select name="motivo" required>
-            <option value="">Motivo do Contato</option>
-            <option value="elogio">Elogio</option>
-            <option value="reclamacao">Reclamação</option>
-          </select>
-          <span class="error">O campo é obrigatório.</span>
-
-          <textarea name="mensagem" rows="6" placeholder="Mensagem" required></textarea>
-          <span class="error">O campo é obrigatório.</span>
-
-          <div class="politica">
-            <input type="checkbox" id="politica" required />
-            <label for="politica">Declaro que li e concordo com a Política de Privacidade</label>
+  <head>
+    <title>Bolos da Simone</title>
+    <link rel="stylesheet" href="CSS/Contato.css" />
+    <link rel="shortcut icon" href="IMG/Bolos_icone_SF2.ico" />
+    <link rel="stylesheet" href="CSS/Simone.css" />
+  </head>
+  <body>
+    <header>
+      <div class="divHeader">
+        <img src="IMG/SIMONE BOLOS.png" class="SimoneLogo" />
+        <nav>
+          <ul>
+            <li class="link"><a href="index.html">A Simone</a></li>
+            <li>|</li>
+            <li class="link">
+              <a href="Bolos.html">Bolos</a>
+            </li>
+            <li>|</li>
+            <li class="link">
+              <a href="Contato.html">Contato</a>
+            </li>
+            <li>|</li>
+            <li class = "link"><a href="Encomendas.html">Encomendas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="divBanner3">
+        <h2 class="fund_text">Contato</h2>
+      </div>
+      <div class="Contato1">
+        <h1 class="Titulo_contato">Deixe sua Mensagem</h1>
+      </div>
+      <form id="frmContato">
+        <div class="dados">
+          <div>
+            <h2>SAC - Serviço de Atendimento ao Consumidor</h2>
+            <legend>Dados Pessoais</legend>
+            <label>Nome</label>
+            <input type="text" id="nome" required />
+            <label>Email</label>
+            <input type="text" id="Email" required />
+            <label>Telefone</label>
+            <input type="text" id="Telefone" placeholder="(99) 99999-9999" />
+            <label>Cidade</label>
+            <input type="text" id="Cidade" required />
           </div>
-
-          <input type="submit" value="Enviar" />
+        </div>
+        <div class="Motivo">
+          <div>
+            <select>
+              <option>Motivo</option>
+              <option>Elogio</option>
+              <option>Reclamação</option>
+              <option>Outros</option>
+            </select>
+            <textarea cols="70" rows="10"></textarea>
+            <label
+              >Concorda em compartilhar seus dados para uma pesquisa de
+              satisfação?</label
+            >
+            <input type="radio" name="Contato" />sim
+            <label>Compraria Conosco Novamente?</label>
+            <select>
+              <option></option>
+              <option>sim</option>
+              <option>não</option>
+            </select>
+            <input type="submit" value="Enviar" />
+          </div>
         </div>
       </form>
-  </main>
-
-  <footer>
-    <p class="pes"> Todos os direitos reservados. Bolos da Simone 2025® </p>
+    </main>
+    <footer>
+      <p class="pes">  Todos os direitos reservados. Bolos da Simone 2025® </p>
   </footer>
-</body>
-
+  </body>
 </html>
