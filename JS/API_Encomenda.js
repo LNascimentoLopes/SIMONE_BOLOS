@@ -1,0 +1,22 @@
+var botaoAPI = document.querySelector("#api-encomenda");
+
+botaoAPI.addEventListener("click", function() {
+    var api = new XMLHttpRequest();
+    api.open("GET", "http://localhost:3000/encomendas_web");
+
+    api.addEventListener("load", function() {
+
+        if (api.status == 200) {
+            var resposta = JSON.parse(api.responseText);
+
+            resposta.forEach(function(encomendaAPI) {
+                adicionaEncomendaTabela(encomendaAPI);
+            });
+
+        } else {
+            console.error("Erro ao carregar API:", api.status, api.responseText);
+        }
+    });
+
+    api.send();
+});

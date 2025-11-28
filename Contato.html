@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <title>Bolos da Simone</title>
+  <link rel="stylesheet" href="CSS/Contato.css" />
+  <link rel="shortcut icon" href="IMG/Bolos_icone_SF2.ico" />
+  <link rel="stylesheet" href="CSS/Simone.css" />
+</head>
+
+<body>
+  <header>
+    <div class="divHeader">
+      <img src="IMG/SIMONE BOLOS.png" class="SimoneLogo" />
+      <nav>
+        <ul>
+          <li class="link"><a href="index.html">A Simone</a></li>
+          <li>|</li>
+          <li class="link">
+            <a href="Bolos.html">Bolos</a>
+          </li>
+          <li>|</li>
+          <li class="link">
+            <a href="Contato.html">Contato</a>
+          </li>
+          <li>|</li>
+          <li class="link"><a href="Encomendas.html">Encomendas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="divBanner3">
+      <h2 class="fund_text">Contato</h2>
+    </div>
+    <div class="Contato1">
+      <h1 class="Titulo_contato">Deixe sua Mensagem</h1>
+    </div>
+    <form id="frmContato" class="formulario">
+      <div class="dados">
+
+        <h2 class="sac">SAC - Serviço de Atendimento ao Consumidor</h2>
+        <div >
+          <legend>Dados Pessoais</legend>
+          <label>Nome</label>
+          <input type="text" id="nome" required />
+          <label>Email</label>
+          <input type="text" id="Email" required />
+          <label>Telefone</label>
+          <input type="text" id="Telefone" placeholder="(99) 99999-9999" />
+          <label>Cidade</label>
+          <input type="text" id="Cidade" required />
+        </div>
+      </div>
+      <div class="Motivo">
+        <div>
+          <select>
+            <option>Motivo</option>
+            <option>Elogio</option>
+            <option>Reclamação</option>
+            <option>Outros</option>
+          </select>
+          <textarea cols="70" rows="10"></textarea>
+          <div class="radio-line">
+            <span>Concorda em compartilhar seus dados para uma pesquisa de satisfação?</span>
+            <input type="radio" id="sim" name="compartilhar">
+            <label for="sim">Sim</label>
+          </div>
+
+          <label>Compraria Conosco Novamente?</label>
+          <select>
+            <option></option>
+            <option>sim</option>
+            <option>não</option>
+          </select>
+          <input class="Enviar" type="submit" value="Enviar" />
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p class="pes"> Todos os direitos reservados. Bolos da Simone 2025® </p>
+  </footer>
+</body>
+
+</html>
