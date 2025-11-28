@@ -2,7 +2,7 @@ var botaoAPI = document.querySelector("#api-encomenda");
 
 botaoAPI.addEventListener("click", function() {
     var api = new XMLHttpRequest();
-    api.open("GET", "http://localhost:3000/encomendas_web");
+    api.open("GET", "https://lnascimentolopes.github.io/SIMONE_BOLOS/encomendas.json");
 
     api.addEventListener("load", function() {
 
@@ -20,3 +20,4 @@ botaoAPI.addEventListener("click", function() {
 
     api.send();
 });
+
