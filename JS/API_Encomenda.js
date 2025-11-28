@@ -2,7 +2,7 @@ var botaoAPI = document.querySelector("#api-encomenda");
 
 botaoAPI.addEventListener("click", function() {
 
-    fetch("https://lnascimentolopes.github.io/SIMONE_BOLOS/encomendas.json")
+    fetch("https://LNascimentoLopes.github.io/SIMONE_BOLOS/encomendas.json")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Erro: " + response.status);
@@ -16,4 +16,5 @@ botaoAPI.addEventListener("click", function() {
         })
         .catch(err => console.error("Erro ao carregar JSON:", err));
 });
+
 
