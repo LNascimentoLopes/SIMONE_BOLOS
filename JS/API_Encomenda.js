@@ -2,7 +2,7 @@ var botaoAPI = document.querySelector("#api-encomenda");
 
 botaoAPI.addEventListener("click", function() {
     var api = new XMLHttpRequest();
-    api.open("GET", "https://lnascimentolopes.github.io/SIMONE_BOLOS/encomendas.json");
+    api.open("GET", "https://LNascimentoLopes.github.io/SIMONE_BOLOS/encomendas.json");
 
     api.addEventListener("load", function() {
 
@@ -14,10 +14,9 @@ botaoAPI.addEventListener("click", function() {
             });
 
         } else {
-            console.error("Erro ao carregar API:", api.status, api.responseText);
+            console.error("Erro ao carregar JSON:", api.status, api.responseText);
         }
     });
 
     api.send();
 });
-
