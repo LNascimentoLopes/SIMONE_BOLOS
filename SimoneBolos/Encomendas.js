@@ -1,1 +1,0 @@
-document.querySelector(".Total").textContent=document.querySelector(".Quantidade").textContent * document.querySelector(".Valor_uni").textContent
