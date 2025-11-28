@@ -1,45 +1,45 @@
-var Clientes = document.querySelectorAll(".Cliente");
+var linhas = document.querySelectorAll(".Cliente");
 
-for (let cont = 0; cont < Clientes.length; cont++) {
-    let qElement = Clientes[cont].querySelector(".Quantidade");
-    let vElement = Clientes[cont].querySelector(".Valor_uni");
-    let tElement = Clientes[cont].querySelector(".Total");
+linhas.forEach(linha => {
+    const qEl = linha.querySelector(".Quantidade");
+    const vEl = linha.querySelector(".Valor_uni");
+    const tEl = linha.querySelector(".Total");
 
-    let q = parseFloat(qElement.textContent);
-    let v = parseFloat(vElement.textContent);
+    // valores numéricos ORIGINAIS
+    const q = Number(qEl.textContent);
+    const v = Number(vEl.textContent);
 
     let valido = true;
 
-    // Validação da quantidade
+    // valida quantidade
     if (isNaN(q) || q < 1) {
-        qElement.textContent = "Quantidade inválida";
-        Clientes[cont].style.color = "white";
-        Clientes[cont].style.backgroundColor = "red";
+        qEl.textContent = "Quantidade inválida";
+        linha.style.backgroundColor = "red";
+        linha.style.color = "white";
         valido = false;
     }
 
-    // Validação do valor unitário
+    // valida valor unitário
     if (isNaN(v) || v < 1) {
-        vElement.textContent = "Valor inválido";
-        Clientes[cont].style.color = "white";
-        Clientes[cont].style.backgroundColor = "red";
+        vEl.textContent = "Valor inválido";
+        linha.style.backgroundColor = "red";
+        linha.style.color = "white";
         valido = false;
-    } else {
-        // Se for válido, já mostra formatado em R$
-        vElement.textContent = v.toLocaleString("pt-BR", { 
-            style: "currency", 
-            currency: "BRL" 
-        });
     }
 
-    // Calcula o total somente se tudo for válido
-    if (valido) {
-        tElement.textContent = CTotal(q, v);
-    }
-}
+    if (!valido) return;
 
-function CTotal(qtd, unit) {
-    let T = qtd * unit;
-    // Retorna formatado em reais
-    return T.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-}
+    // formata valor unitário
+    vEl.textContent = v.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
+
+    // total formatado
+    const total = q * v;
+
+    tEl.textContent = total.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
+});
